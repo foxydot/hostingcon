@@ -1,0 +1,89 @@
+//mixins for social colors
+@facebook: #345AA1;
+@twitter: #348DB9;
+@pinterest: #EC1A22;
+@google: #000000;
+@linkedin: #66B5D3;
+@instagram: #EC1A22;
+@tumblr: #3E5A70;
+@reddit: #FF4400;
+@flickr: #0062DD;
+@youtube: #CC181E;
+@vimeo: #232021;
+@vine: #00BE8F;
+@sharethis: #00BF00;
+@contact: #999999;
+@rss: #F37D2A;
+
+.site-footer{
+  .social-media{
+    float: right;
+    a.fa{
+      background: none;
+      border: 4px solid @white;
+      border-radius: 100%;
+      color: @white;
+      margin: 0 6px;
+      height: 50px;
+      width: 50px;
+      font-size: 2.4rem;
+      line-height: 1.8;
+    }
+    a:before{
+      opacity: 1;
+    }
+    a.fa.last-child{
+      margin-right: 0;
+    }
+    a.fa:hover{
+      color: @white;
+    }
+        
+     a.fa-facebook:hover{
+       background-color:@facebook;
+     }
+     a.fa-twitter:hover{
+       background-color:@twitter;
+     }
+     a.fa-pinterest:hover{
+       background-color:@pinterest;
+     }
+     a.fa-google-plus:hover{
+       background-color:@google;
+     }
+     a.fa-linkedin:hover{
+       background-color:@linkedin;
+     }
+     a.fa-instagram:hover{
+       background-color:@instagram;
+     }
+     a.fa-tumblr:hover{
+       background-color:@tumblr;
+     }
+     a.fa-reddit:hover{
+       background-color:@reddit;
+     }
+     a.fa-flickr:hover{
+       background-color:@flickr;
+     }
+     a.fa-youtube:hover{
+       background-color:@youtube;
+     }
+     a.fa-vimeo-square:hover{
+       background-color:@vimeo;
+     }
+     a.fa-vine:hover{
+       background-color:@vine;
+     }
+     a.fa-share-alt:hover{
+       background-color:@sharethis;
+     }
+     a.fa-envelope:hover{
+       background-color:@contact;
+     }
+     a.fa-rss:hover{
+       background-color:@rss;
+     }
+  }
+}
+
