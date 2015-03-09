@@ -3,14 +3,23 @@ Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-  background-color: @blue;
+  background: rgb(36,86,159); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(36,86,159,1) 0%, rgba(4,29,68,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(36,86,159,1)), color-stop(100%,rgba(4,29,68,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(36,86,159,1) 0%,rgba(4,29,68,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(36,86,159,1) 0%,rgba(4,29,68,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(36,86,159,1) 0%,rgba(4,29,68,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(36,86,159,1) 0%,rgba(4,29,68,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24569f', endColorstr='#041d44',GradientType=0 ); /* IE6-9 */
   color: @white;
   .customheader(1);
   text-transform: uppercase;
   padding: 40px 0;
   padding: 4rem 0;
   text-align: center;
-  .copyright,.social{.make-sm-column(6);}
+  .copyright,.social{
+    .make-sm-column(6);
+  }
   .copyright{text-align: left;
   padding: 1.5rem 0;}
   .social{text-align: right;}
@@ -19,5 +28,14 @@ Site Footer
   }
   a {
     color: @white;
+    opacity: 0.6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  a:hover{
+    opacity: 1;
   }
 }

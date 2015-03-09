@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 @import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 /*
 HTML5 Reset
 ---------------------------------------------------------------------------------------------------- */
@@ -181,42 +182,6 @@ input[type="search"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* Float Clearing
---------------------------------------------- 
-
-.archive-pagination:before,
-.clearfix:before,
-.entry:before,
-.entry-pagination:before,
-.footer-widgets:before,
-.nav-primary:before,
-.nav-secondary:before,
-.site-container:before,
-.site-footer:before,
-.site-header:before,
-.site-inner:before,
-.wrap:before {
-  content: " ";
-  display: table;
-}
-
-.archive-pagination:after,
-.clearfix:after,
-.entry:after,
-.entry-pagination:after,
-.footer-widgets:after,
-.nav-primary:after,
-.nav-secondary:after,
-.site-container:after,
-.site-footer:after,
-.site-header:after,
-.site-inner:after,
-.wrap:after {
-  clear: both;
-  content: " ";
-  display: table;
-}
-*/
 /*!
  * Bootstrap v3.0.0
  *
@@ -1776,16 +1741,16 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #999999;
 }
 .form-control::-webkit-input-placeholder {
-  color: #ff69b4;
+  color: hotpink;
 }
 .form-control:-moz-placeholder {
-  color: #ff69b4;
+  color: hotpink;
 }
 .form-control::-moz-placeholder {
-  color: #ff69b4;
+  color: hotpink;
 }
 .form-control:-ms-input-placeholder {
-  color: #ff69b4;
+  color: hotpink;
 }
 .form-control {
   display: block;
@@ -5669,7 +5634,7 @@ td.visible-print {
 /* Font Stacks */
 .customsansserif,
 .customsanserif {
-  font-family: "News Cycle", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5801,7 +5766,7 @@ blockquote {
   border: none;
 }
 blockquote p {
-  font-family: "News Cycle", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5832,7 +5797,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "News Cycle", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6004,7 +5969,24 @@ Structure and Layout
 /* Site Containers
 --------------------------------------------- */
 .site-container {
-  background: url("../images/banner-bg.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+  background: #24569f;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #24569f 0%, #041d44 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #24569f), color-stop(100%, #041d44));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #24569f 0%, #041d44 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #24569f 0%, #041d44 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #24569f 0%, #041d44 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #24569f 0%, #041d44 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#24569f', endColorstr='#041d44', GradientType=0);
+  /* IE6-9 */
+  padding-top: 2rem;
+  padding-top: 20px;
 }
 .container {
   max-width: none;
@@ -6035,8 +6017,6 @@ Structure and Layout
 /* Content */
 main.content {
   float: right;
-  margin-bottom: 40px;
-  margin-bottom: 4rem;
   /*width: 740px;*/
 }
 .content-sidebar .content,
@@ -6051,6 +6031,7 @@ main.content {
 }
 .full-width-content .content {
   width: 100%;
+  float: none;
 }
 /* Primary Sidebar */
 .sidebar-primary {
@@ -6469,7 +6450,7 @@ img#wpstats {
 Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background: url("../images/header-bg.png") repeat-x scroll center top rgba(0, 0, 0, 0);
+  background: #ffffff;
 }
 .site-header .wrap {
   padding: 40px 0;
@@ -6479,16 +6460,15 @@ Site Header
 --------------------------------------------- */
 .title-area {
   float: left;
-  font-family: "News Cycle", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.625;
   font-weight: 700;
-  padding: 0;
+  margin: 0.4rem 0;
+  margin: 4px 0;
   width: 447px;
-  margin-top: 24px;
-  margin-top: 2.4rem;
 }
 .header-image .title-area {
   padding: 0;
@@ -6498,7 +6478,6 @@ Site Header
   font-size: 2.8rem;
   line-height: 1;
   margin: 0;
-  text-transform: uppercase;
 }
 .site-title a,
 .site-title a:hover {
@@ -6528,10 +6507,9 @@ Site Header
 }
 .header-image .site-title a {
   float: left;
-  min-height: 80px;
-  width: 447px;
-  height: 100px;
-  background: url("../images/logo.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+  width: 380px;
+  height: 60px;
+  background: url("../img/logo.png") no-repeat scroll center top rgba(0, 0, 0, 0);
   background-size: contain;
   margin: 0;
 }
@@ -6540,7 +6518,7 @@ Site Header
 .site-header .widget-area {
   float: right;
   text-align: right;
-  width: 415px;
+  width: auto;
   max-height: 150px;
   line-height: 1;
   margin-top: 1rem;
@@ -6550,26 +6528,34 @@ Site Header
   display: inline-block;
 }
 .site-header .widget-area .widget .widget-title {
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 28px;
-  font-weight: 400;
+  color: #ee7b29;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 1.625;
   letter-spacing: 2px;
   line-height: 30px;
-  margin: 35px 0 0;
+  margin: 1rem 1rem 0;
+  margin: 10px 10px 0;
   padding: 0;
   text-transform: none;
+  float: left;
 }
 .site-header .widget-area .widget .textwidget {
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
+  color: #2094d8;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1.625;
   letter-spacing: 2px;
-  line-height: 12px;
-  margin: 5px 0 0;
+  line-height: 30px;
+  margin: 1.2rem 1rem 0;
+  margin: 12px 10px 0;
   padding: 0;
-  text-transform: uppercase;
+  float: left;
+  font-style: italic;
 }
 .site-header .widget-area .widget_nav_menu {
   position: relative;
@@ -6582,7 +6568,6 @@ Site Header
 }
 .site-header .widget-area .widget_nav_menu nav ul li a {
   padding: 0;
-  text-transform: uppercase;
   font-size: 1rem;
   color: #b8b7b9;
 }
@@ -6649,7 +6634,7 @@ Site Navigation
 .genesis-nav-menu {
   clear: both;
   color: #2094d8;
-  font-family: "News Cycle", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6749,7 +6734,7 @@ Site Navigation
 --------------------------------------------- */
 .nav-primary {
   display: block;
-  font-family: "News Cycle", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   font-size: 1.6rem;
@@ -6867,14 +6852,11 @@ Content Area
 --------------------------------------------- */
 article.entry {
   border-radius: 3px;
-  margin-bottom: 40px;
-  margin-bottom: 4rem;
   padding: 24px 15px 24px;
   padding: 0;
 }
 .entry-content h3 {
   color: #ee7b29;
-  text-transform: uppercase;
 }
 .entry-content .attachment a,
 .entry-content .gallery a {
@@ -7213,9 +7195,24 @@ Footer Widgets
 Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #2094d8;
+  background: #24569f;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #24569f 0%, #041d44 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #24569f), color-stop(100%, #041d44));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #24569f 0%, #041d44 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #24569f 0%, #041d44 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #24569f 0%, #041d44 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #24569f 0%, #041d44 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#24569f', endColorstr='#041d44', GradientType=0);
+  /* IE6-9 */
   color: #ffffff;
-  font-family: "News Cycle", "Trebuchet MS", Calibri, sans-serif;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 10px;
   font-size: 1rem;
@@ -7251,6 +7248,184 @@ Site Footer
 }
 .site-footer a {
   color: #ffffff;
+  opacity: 0.6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.site-footer a:hover {
+  opacity: 1;
+}
+.section-content .section {
+  clear: both;
+  float: none;
+}
+.section-content .section.header {
+  padding: 2rem 0;
+  padding: 20px 0;
+}
+.section-content .section.header .section-title {
+  display: none;
+}
+.section-content .section.header h3 {
+  color: #ffffff;
+  font-family: "HelveticaNeueLTCom-BdCn";
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 34px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.section-content .section.header ul {
+  color: #ffffff;
+  font-family: "HelveticaNeueLTStd47LightCondensed";
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.section-content .section.header ul li {
+  background: url("../images/arrow.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+  border-bottom: 1px dotted #ffffff;
+  list-style: outside none none;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+}
+.section-content .section.header h4 {
+  color: #ffff00;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 1.625;
+  letter-spacing: 1px;
+  line-height: 34px;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.section-content .section.content {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 80px;
+  padding-top: 50px;
+  background: url("../images/form-bg.png") no-repeat scroll center center #ffffff;
+}
+.section-content .section.content h3 {
+  color: #494949;
+  font-family: "HelveticaNeueLTStd47LightCondensed";
+  font-size: 24px;
+  font-weight: normal;
+}
+.section-content .section.content .section-title h3 {
+  padding: 24px 0 24px 40px;
+  color: #2094d8;
+  font-family: "HelveticaNeueLTCom-BdCn";
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 34px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  text-align: center;
+}
+.section-content .section.content .gform_wrapper {
+  margin-top: 100px;
+}
+.section-content .section.content .gform_wrapper ul li.gfield {
+  clear: none !important;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-bottom: 0 none;
+  width: 98% !important;
+}
+.section-content .section.content .gform_wrapper ul li.gfield input {
+  border: 1px solid #999999;
+  box-shadow: 2px 2px 0 #d0d0d0 inset;
+  color: #494949;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  padding: 0.8rem !important;
+}
+.section-content .section.content .gform_wrapper .gform_footer {
+  clear: none;
+}
+.section-content .section.content .gform_wrapper .gform_footer input {
+  background: url("../images/getwhitepaper-bg.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 34px;
+  margin-left: 0;
+  padding: 12px 97px 5px 38px;
+  text-shadow: -1px -1px 0 #f7941d;
+}
+.section-content .section.video {
+  background: #e6e6e6;
+}
+.section-content .section.video .section-title h3 {
+  font-size: 36px;
+}
+.section-content .section.video h3 {
+  color: #2094d8;
+  text-align: center;
+}
+@media only screen and (max-width: 769px) {
+  .section-content .section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section-content .section.first-child {
+    background: url("../images/banner-bg.jpg") repeat-y scroll center top #2094d8;
+  }
+  .section-content .section.first-child .section-title {
+    margin: 20px auto 0;
+    text-align: center;
+    width: 100%;
+  }
+  .section-content .section.first-child .slideshow {
+    margin: 20px auto;
+    width: 540px;
+  }
+  .section-content .section.first-child ul {
+    margin-left: 0;
+    width: 98%;
+  }
+  .section-content .section.even .wrap {
+    background: none;
+  }
+  .section-content .section.even .section-title {
+    color: #0998DB;
+    float: none;
+    text-align: center;
+    padding: 0;
+    width: 98%;
+  }
+  .section-content .section.even h3 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .section-content .section.even img {
+    display: block;
+    margin: 10px auto;
+  }
+  .section-content .section.even ul {
+    width: 98%;
+  }
+  .section-content .section.last-child img {
+    display: block;
+    margin: 10px auto;
+  }
+  .section-content .section.last-child .gform_wrapper {
+    background: none;
+    width: 98%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .section-content .section.first-child .slideshow {
+    display: none;
+  }
 }
 .site-footer .social-media {
   float: right;

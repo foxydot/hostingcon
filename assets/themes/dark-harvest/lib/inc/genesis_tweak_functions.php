@@ -340,7 +340,7 @@ function register_landingpage_scripts(){
        $template_file = get_post_meta($postid,'_wp_page_template',TRUE);
       // check for a template type
     if ($template_file == 'front-page.php' || $template_file == 'landing-page.php') { 
-            wp_enqueue_style('msd-landingpage-style',get_stylesheet_directory_uri().'/lib/css/landingpage.css',array('msd-style'));
+            //wp_enqueue_style('msd-landingpage-style',get_stylesheet_directory_uri().'/lib/css/landingpage.css',array('msd-style'));
         }   
     }
 }
@@ -364,7 +364,7 @@ function msdlab_frontpage_tabs(){
     while($landingpage_metabox->have_fields('sections')):
         $tab_content[$i] = '
         <div class="section '.$landingpage_metabox->get_the_value('class').'" id="'.sanitize_title(wp_strip_all_tags($landingpage_metabox->get_the_value('title'))).'">
-        <div class="wrap">
+        <div class="wrap row">
         <h2 class="section-title">'.apply_filters('the_title',$landingpage_metabox->get_the_value('title')).'</h2>'
         .apply_filters('the_content',$landingpage_metabox->get_the_value('content'))
         .'</div>

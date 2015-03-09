@@ -1,4 +1,193 @@
-//mixins for social colors
+
+.section-content{
+  .section{
+    clear: both;
+    float: none;
+    .wrap{
+    }
+  }
+  .section.header{
+    padding: 2rem 0;
+    padding: 20px 0;
+  
+    .section-title{
+      display: none;
+    }
+    h3{    
+      color: #ffffff;
+      font-family: "HelveticaNeueLTCom-BdCn";
+      font-size: 30px;
+      letter-spacing: 0;
+      line-height: 34px;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+    ul{
+      color: #ffffff;
+      font-family: "HelveticaNeueLTStd47LightCondensed";
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 0;
+      margin-left: 0;
+      li{
+        background: url("../images/arrow.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+        border-bottom: 1px dotted #ffffff;
+        list-style: outside none none;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        }
+    }
+    h4{
+      color: @yellow;
+      .customheader(2.5);
+      letter-spacing: 1px;
+      line-height: 34px;
+      margin-bottom: 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .section.content{
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 80px;
+    padding-top: 50px;
+      background: url("../images/form-bg.png") no-repeat scroll center center @white;
+    .wrap{
+    }
+    h3{
+      color: #494949;
+      font-family: "HelveticaNeueLTStd47LightCondensed";
+      font-size: 24px;
+      font-weight: normal;
+    }
+    .section-title h3 {
+      padding: 24px 0 24px 40px;
+      color: @blue;
+      font-family: "HelveticaNeueLTCom-BdCn";
+      font-size: 48px;
+      letter-spacing: 0;
+      line-height: 34px;
+      margin-bottom: 15px;
+      margin-top: 0;
+      text-align: center;
+    }
+    .gform_wrapper{
+      margin-top: 100px;
+      ul{
+        li.gfield{
+          clear: none !important;
+          background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+          border-bottom: 0 none;
+          width: 98% !important;
+          input{
+            border: 1px solid #999999;
+            box-shadow: 2px 2px 0 #d0d0d0 inset;
+            color: #494949;
+            font-family: "Source Sans Pro",sans-serif;
+            font-size: 13px;
+            padding: 0.8rem !important;
+          }
+        }
+      }
+      .gform_footer{
+        clear: none;
+        input{
+          background: url("../images/getwhitepaper-bg.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+          font-size: 25px;
+          letter-spacing: 0;
+          line-height: 34px;
+          margin-left: 0;
+          padding: 12px 97px 5px 38px;
+          text-shadow: -1px -1px 0 rgba(247, 148, 29, 1);
+        }
+      }
+    }
+  }
+  .section.video{
+    background: lighten(@vltgrey,10%);
+    .section-title h3 {
+        font-size: 36px;
+    }
+    h3{
+      color: @blue;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  
+.section-content{
+  .section{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section.first-child{
+    background: url("../images/banner-bg.jpg") repeat-y scroll center top @blue;
+    .section-title{
+      margin: 20px auto 0;
+      text-align: center;
+      width: 100%;
+    }
+    .slideshow{
+      margin: 20px auto;
+      width: 540px;     
+    }
+    
+    ul{
+      margin-left: 0;
+      width: 98%;
+    }
+  }
+  .section.even {
+    .wrap{
+      background: none;
+    }
+    .section-title {
+      color: #0998DB;
+      float: none;
+      text-align: center;
+      padding: 0;
+      width: 98%;
+    }
+    h3{
+      text-align: center;
+      margin-left: 0;
+    }
+    img{
+      display: block;
+      margin: 10px auto;
+    }
+    ul{
+      width: 98%;
+    }
+  }
+  .section.last-child{
+     img{
+       display: block;
+       margin: 10px auto;
+     }
+     .gform_wrapper{
+       background: none;
+       width: 98%;
+       margin: 0 auto;
+       padding: 0;
+     }
+  }
+}
+  
+}
+
+@media only screen and (max-width : 479px) {  
+  .section-content{
+  .section.first-child{
+    .slideshow{
+      display: none;  
+    }
+  }
+  }
+  }//mixins for social colors
 @facebook: #345AA1;
 @twitter: #348DB9;
 @pinterest: #EC1A22;
