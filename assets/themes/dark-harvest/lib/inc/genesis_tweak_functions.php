@@ -5,7 +5,7 @@ function msdlab_return_false(){
 /*** HEADER ***/
 add_filter('genesis_seo_title','msdlab_filter_home_link');
 function msdlab_filter_home_link($content){
-    $content = preg_replace('http://landing.hostingcon.com/','http://www.hostingcon.com/global/',$content);
+    $content = preg_replace('|http://landing.hostingcon.com/|','http://www.hostingcon.com/global/',$content);
     return $content;
 }
 /**
