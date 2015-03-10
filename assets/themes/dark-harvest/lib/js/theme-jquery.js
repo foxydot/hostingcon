@@ -10,6 +10,8 @@ jQuery(document).ready(function($) {
     $('.header-widget-area section.widget').addClass('col-sm-'+cols);
     $('.header-widget-area section.widget').addClass('col-xs-12');
     
+    $('.no-right .ginput_right').removeClass('ginput_right');
+    
     var device = function(){
         if($( window ).width() > 769){
             console.log('desktop');
